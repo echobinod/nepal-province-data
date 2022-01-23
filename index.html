@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Province wise data filter</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <section>
+        <h2>Province, District, Municipality and Ward filter JavaScript plugin</h2>
+        <select id="province">
+            <option value="">Select Province</option>
+        </select>
+        <select id="district">
+            <option value="">Select District</option>
+        </select>
+        <select id="municipality">
+            <option value="">Select Municipality</option>
+        </select>
+        <input type="number" placeholder="Ward No." min="1">
+    </section>
+    <script>
+        // create new instance
+        var nepal = new NepalProvinceData({
+            language: 'np',
+            provinceSelector: '#province',
+            districtSelector: '#district',
+            municipalitySelector: '#municipality',
+            // wardSelector: '#ward'
+        });
+    </script>
+</body>
+
+</html>
